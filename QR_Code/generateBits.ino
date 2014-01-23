@@ -4,7 +4,7 @@ void calculateQRCode()
   eccBinary = "";
   dataString = "";
   byteMessage = "";
-  messageToEncode = "HACKADAY";
+  messageToEncode = "TEST";
   length = 0;
   byteCounter = 0;
   exponent = 25;

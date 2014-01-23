@@ -1,149 +1,150 @@
-void drawTemplate()
+void drawTemplate(UTFT myGLCD)
 {
-
-  //TOP LEFT CORNER OUTER BOX 
-  Tft.fillRectangle(10,250,10,10,BLACK);
-  Tft.fillRectangle(10,240,10,10,BLACK);
-  Tft.fillRectangle(10,230,10,10,BLACK);
-  Tft.fillRectangle(10,220,10,10,BLACK);
-  Tft.fillRectangle(10,210,10,10,BLACK);
-  Tft.fillRectangle(10,200,10,10,BLACK);
-  Tft.fillRectangle(10,190,10,10,BLACK);
-
+   myGLCD.setColor(VGA_BLACK);
+   qrFillRect(myGLCD, 10, 250);
+    qrFillRect(myGLCD, 10,250);
+    qrFillRect(myGLCD, 10,240);
+    qrFillRect(myGLCD, 10,230);
+    qrFillRect(myGLCD, 10,220);
+    qrFillRect(myGLCD, 10,210);
+    qrFillRect(myGLCD, 10,200);
+    qrFillRect(myGLCD, 10,190);
   
-  Tft.fillRectangle(20,250,10,10,BLACK);
-  Tft.fillRectangle(30,250,10,10,BLACK);
-  Tft.fillRectangle(40,250,10,10,BLACK);
-  Tft.fillRectangle(50,250,10,10,BLACK);
-  Tft.fillRectangle(60,250,10,10,BLACK);
-  Tft.fillRectangle(70,250,10,10,BLACK);
-
-  Tft.fillRectangle(70,240,10,10,BLACK);
-  Tft.fillRectangle(70,230,10,10,BLACK);
-  Tft.fillRectangle(70,220,10,10,BLACK);
-  Tft.fillRectangle(70,210,10,10,BLACK);
-  Tft.fillRectangle(70,200,10,10,BLACK);
-  Tft.fillRectangle(70,190,10,10,BLACK);
+    
+    qrFillRect(myGLCD, 20,250);
+    qrFillRect(myGLCD, 30,250);
+    qrFillRect(myGLCD, 40,250);
+    qrFillRect(myGLCD, 50,250);
+    qrFillRect(myGLCD, 60,250);
+    qrFillRect(myGLCD, 70,250);
   
-  Tft.fillRectangle(60,190,10,10,BLACK);
-  Tft.fillRectangle(50,190,10,10,BLACK);
-  Tft.fillRectangle(40,190,10,10,BLACK);
-  Tft.fillRectangle(30,190,10,10,BLACK);
-  Tft.fillRectangle(20,190,10,10,BLACK);
-  //TOP LEFT CORNER OUTER BOX END  
+    qrFillRect(myGLCD, 70,240);
+    qrFillRect(myGLCD, 70,230);
+    qrFillRect(myGLCD, 70,220);
+    qrFillRect(myGLCD, 70,210);
+    qrFillRect(myGLCD, 70,200);
+    qrFillRect(myGLCD, 70,190);
+    
+    qrFillRect(myGLCD, 60,190);
+    qrFillRect(myGLCD, 50,190);
+    qrFillRect(myGLCD, 40,190);
+    qrFillRect(myGLCD, 30,190);
+    qrFillRect(myGLCD, 20,190);
+    //TOP LEFT CORNER OUTER BOX END  
+    
+    //TOP LEFT CORNER INSIDE BOX START  
+    qrFillRect(myGLCD, 30,230);
+    qrFillRect(myGLCD, 30,220);
+    qrFillRect(myGLCD, 30,210);
   
-  //TOP LEFT CORNER INSIDE BOX START  
-  Tft.fillRectangle(30,230,10,10,BLACK);
-  Tft.fillRectangle(30,220,10,10,BLACK);
-  Tft.fillRectangle(30,210,10,10,BLACK);
-
-  Tft.fillRectangle(40,230,10,10,BLACK);
-  Tft.fillRectangle(40,220,10,10,BLACK);
-  Tft.fillRectangle(40,210,10,10,BLACK);
-
-  Tft.fillRectangle(50,230,10,10,BLACK);
-  Tft.fillRectangle(50,220,10,10,BLACK);
-  Tft.fillRectangle(50,210,10,10,BLACK);  
-  //TOP LEFT CORNER INSIDE BOX END
+    qrFillRect(myGLCD, 40,230);
+    qrFillRect(myGLCD, 40,220);
+    qrFillRect(myGLCD, 40,210);
+  
+    qrFillRect(myGLCD, 50,230);
+    qrFillRect(myGLCD, 50,220);
+    qrFillRect(myGLCD, 50,210);
+    //TOP LEFT CORNER INSIDE BOX END
   
   //TOP RIGHT OUTER BOX START
-  Tft.fillRectangle(10,50,10,10,BLACK);
-  Tft.fillRectangle(10,60,10,10,BLACK);
-  Tft.fillRectangle(10,70,10,10,BLACK);
-  Tft.fillRectangle(10,80,10,10,BLACK);
-  Tft.fillRectangle(10,90,10,10,BLACK);
-  Tft.fillRectangle(10,100,10,10,BLACK);
-  Tft.fillRectangle(10,110,10,10,BLACK);
+  qrFillRect(myGLCD, 10,50);
+  qrFillRect(myGLCD, 10,60);
+  qrFillRect(myGLCD, 10,70);
+  qrFillRect(myGLCD, 10,80);
+  qrFillRect(myGLCD, 10,90);
+  qrFillRect(myGLCD, 10,100);
+  qrFillRect(myGLCD, 10,110);
 
-  Tft.fillRectangle(20,50,10,10,BLACK);
-  Tft.fillRectangle(30,50,10,10,BLACK);
-  Tft.fillRectangle(40,50,10,10,BLACK);
-  Tft.fillRectangle(50,50,10,10,BLACK);
-  Tft.fillRectangle(60,50,10,10,BLACK);
-  Tft.fillRectangle(70,50,10,10,BLACK);
+  qrFillRect(myGLCD, 20,50);
+  qrFillRect(myGLCD, 30,50);
+  qrFillRect(myGLCD, 40,50);
+  qrFillRect(myGLCD, 50,50);
+  qrFillRect(myGLCD, 60,50);
+  qrFillRect(myGLCD, 70,50);
 
-  Tft.fillRectangle(70,60,10,10,BLACK);
-  Tft.fillRectangle(70,70,10,10,BLACK);
-  Tft.fillRectangle(70,80,10,10,BLACK);
-  Tft.fillRectangle(70,90,10,10,BLACK);
-  Tft.fillRectangle(70,100,10,10,BLACK);
-  Tft.fillRectangle(70,110,10,10,BLACK);
+  qrFillRect(myGLCD, 70,60);
+  qrFillRect(myGLCD, 70,70);
+  qrFillRect(myGLCD, 70,80);
+  qrFillRect(myGLCD, 70,90);
+  qrFillRect(myGLCD, 70,100);
+  qrFillRect(myGLCD, 70,110);
 
-  Tft.fillRectangle(60,110,10,10,BLACK);
-  Tft.fillRectangle(50,110,10,10,BLACK);
-  Tft.fillRectangle(40,110,10,10,BLACK);  
-  Tft.fillRectangle(30,110,10,10,BLACK);
-  Tft.fillRectangle(20,110,10,10,BLACK);  
+  qrFillRect(myGLCD, 60,110);
+  qrFillRect(myGLCD, 50,110);
+  qrFillRect(myGLCD, 40,110);  
+  qrFillRect(myGLCD, 30,110);
+  qrFillRect(myGLCD, 20,110);
   //TOP RIGHT OUTER BOX END
   
   //TOP RIGHT INNER BOX START
-  Tft.fillRectangle(30,90,10,10,BLACK);
-  Tft.fillRectangle(30,80,10,10,BLACK);
-  Tft.fillRectangle(30,70,10,10,BLACK);
+  qrFillRect(myGLCD, 30,90);
+  qrFillRect(myGLCD, 30,80);
+  qrFillRect(myGLCD, 30,70);
 
-  Tft.fillRectangle(40,90,10,10,BLACK);
-  Tft.fillRectangle(40,80,10,10,BLACK);
-  Tft.fillRectangle(40,70,10,10,BLACK);
+  qrFillRect(myGLCD, 40,90);
+  qrFillRect(myGLCD, 40,80);
+  qrFillRect(myGLCD, 40,70);
 
-  Tft.fillRectangle(50,90,10,10,BLACK);
-  Tft.fillRectangle(50,80,10,10,BLACK);
-  Tft.fillRectangle(50,70,10,10,BLACK);
+  qrFillRect(myGLCD, 50,90);
+  qrFillRect(myGLCD, 50,80);
+  qrFillRect(myGLCD, 50,70);
   //TOP RIGHT INNER BOX END
   
   
   //BOTTOM RIGHT OUTER BOX START
-  Tft.fillRectangle(210,250,10,10,BLACK);
-  Tft.fillRectangle(200,250,10,10,BLACK);
-  Tft.fillRectangle(190,250,10,10,BLACK);
-  Tft.fillRectangle(180,250,10,10,BLACK);
-  Tft.fillRectangle(170,250,10,10,BLACK);
-  Tft.fillRectangle(160,250,10,10,BLACK);
-  Tft.fillRectangle(150,250,10,10,BLACK);
+  qrFillRect(myGLCD, 210,250);
+  qrFillRect(myGLCD, 200,250);
+  qrFillRect(myGLCD, 190,250);
+  qrFillRect(myGLCD, 180,250);
+  qrFillRect(myGLCD, 170,250);
+  qrFillRect(myGLCD, 160,250);
+  qrFillRect(myGLCD, 150,250);
 
-  Tft.fillRectangle(210,240,10,10,BLACK);
-  Tft.fillRectangle(210,230,10,10,BLACK);
-  Tft.fillRectangle(210,220,10,10,BLACK);
-  Tft.fillRectangle(210,210,10,10,BLACK);
-  Tft.fillRectangle(210,200,10,10,BLACK);
-  Tft.fillRectangle(210,190,10,10,BLACK);
+  qrFillRect(myGLCD, 210,240);
+  qrFillRect(myGLCD, 210,230);
+  qrFillRect(myGLCD, 210,220);
+  qrFillRect(myGLCD, 210,210);
+  qrFillRect(myGLCD, 210,200);
+  qrFillRect(myGLCD, 210,190);
 
-  Tft.fillRectangle(200,190,10,10,BLACK);
-  Tft.fillRectangle(190,190,10,10,BLACK);
-  Tft.fillRectangle(180,190,10,10,BLACK);
-  Tft.fillRectangle(170,190,10,10,BLACK);
-  Tft.fillRectangle(160,190,10,10,BLACK);
-  Tft.fillRectangle(150,190,10,10,BLACK);
+  qrFillRect(myGLCD, 200,190);
+  qrFillRect(myGLCD, 190,190);
+  qrFillRect(myGLCD, 180,190);
+  qrFillRect(myGLCD, 170,190);
+  qrFillRect(myGLCD, 160,190);
+  qrFillRect(myGLCD, 150,190);
 
-  Tft.fillRectangle(150,200,10,10,BLACK);
-  Tft.fillRectangle(150,210,10,10,BLACK);
-  Tft.fillRectangle(150,220,10,10,BLACK);
-  Tft.fillRectangle(150,230,10,10,BLACK);
-  Tft.fillRectangle(150,240,10,10,BLACK);
+  qrFillRect(myGLCD, 150,200);
+  qrFillRect(myGLCD, 150,210);
+  qrFillRect(myGLCD, 150,220);
+  qrFillRect(myGLCD, 150,230);
+  qrFillRect(myGLCD, 150,240);
    //BOTTOM RIGHT OUTER BOX END
   
   //BOTTOM RIGHT INNER BOX START
-  Tft.fillRectangle(170,230,10,10,BLACK);
-  Tft.fillRectangle(170,220,10,10,BLACK);
-  Tft.fillRectangle(170,210,10,10,BLACK);
+  qrFillRect(myGLCD, 170,230);
+  qrFillRect(myGLCD, 170,220);
+  qrFillRect(myGLCD, 170,210);
   
-  Tft.fillRectangle(180,230,10,10,BLACK);
-  Tft.fillRectangle(180,220,10,10,BLACK);
-  Tft.fillRectangle(180,210,10,10,BLACK);
+  qrFillRect(myGLCD, 180,230);
+  qrFillRect(myGLCD, 180,220);
+  qrFillRect(myGLCD, 180,210);
 
-  Tft.fillRectangle(190,230,10,10,BLACK);
-  Tft.fillRectangle(190,220,10,10,BLACK);
-  Tft.fillRectangle(190,210,10,10,BLACK);
+  qrFillRect(myGLCD, 190,230);
+  qrFillRect(myGLCD, 190,220);
+  qrFillRect(myGLCD, 190,210);
   //BOTTOM RIGHT INNER BOX END
 
   //Timing Pattern
-   Tft.fillRectangle(70,170,10,10,BLACK);
-   Tft.fillRectangle(70,150,10,10,BLACK);
-   Tft.fillRectangle(70,130,10,10,BLACK);
+   qrFillRect(myGLCD, 70,170);
+   qrFillRect(myGLCD, 70,150);
+   qrFillRect(myGLCD, 70,130);
 
-   Tft.fillRectangle(90,190,10,10,BLACK);
-   Tft.fillRectangle(110,190,10,10,BLACK);
-   Tft.fillRectangle(130,190,10,10,BLACK);
+   qrFillRect(myGLCD, 90,190);
+   qrFillRect(myGLCD, 110,190);
+   qrFillRect(myGLCD, 130,190);
 
-   Tft.fillRectangle(140,170,10,10,BLACK);
+   qrFillRect(myGLCD, 140,170);
    //end Timing Pattern
+
 }

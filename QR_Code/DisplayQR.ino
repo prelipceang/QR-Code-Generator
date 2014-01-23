@@ -1,21 +1,21 @@
-void informationBits()
+void informationBits(UTFT myGLCD)
 {
-
    //format & version information fields
    for(int i = 210; i > 140; i-=10){
       if(TypeInfomationBits[counter] == 1){
-        Tft.fillRectangle(i,170,10,10,BLACK);
+        qrFillRectColor(myGLCD,i,170,VGA_BLACK);
       }else{
-        Tft.fillRectangle(i,170,10,10,WHITE);
+        qrFillRectColor(myGLCD,i,170,VGA_WHITE);
       } 
      counter += 1;
    }
 
    for(int i = 120; i > 40; i-=10){
      if(TypeInfomationBits[counter] == 1){
-       Tft.fillRectangle(90,i,10,10,BLACK);
+       qrFillRectColor(myGLCD,i,170,VGA_BLACK);
+       qrFillRectColor(myGLCD,90,i,VGA_BLACK);
      }else{
-       Tft.fillRectangle(90,i,10,10,WHITE);
+       qrFillRectColor(myGLCD,90,i,VGA_WHITE);
      }
      counter += 1;  
    }
@@ -25,39 +25,39 @@ void informationBits()
   
    for(int i = 250; i > 190; i-=10){
      if(TypeInfomationBits[counter] == 1){
-       Tft.fillRectangle(90,i,10,10,BLACK);
+       qrFillRectColor(myGLCD,90,i,VGA_BLACK);
      }else{
-       Tft.fillRectangle(90,i,10,10,WHITE);
+       qrFillRectColor(myGLCD,90,i,VGA_WHITE);
      }
      counter += 1;       
    }
    
    if(TypeInfomationBits[counter] == 1){
-     Tft.fillRectangle(90,180,10,10,BLACK);
+     qrFillRectColor(myGLCD,90,180,VGA_BLACK);
    }else{
-     Tft.fillRectangle(90,180,10,10,WHITE);
+     qrFillRectColor(myGLCD,90,180,VGA_WHITE);
    }
    counter += 1; 
    
     if(TypeInfomationBits[counter] == 1){
-     Tft.fillRectangle(90,170,10,10,BLACK);
+     qrFillRectColor(myGLCD,90,170,VGA_BLACK);
    }else{
-     Tft.fillRectangle(90,170,10,10,WHITE);
+     qrFillRectColor(myGLCD,90,170,VGA_WHITE);
    }
    counter += 1; 
    
   if(TypeInfomationBits[counter] == 1){
-     Tft.fillRectangle(80,170,10,10,BLACK);
+     qrFillRectColor(myGLCD,80,170,VGA_BLACK);
    }else{
-     Tft.fillRectangle(80,170,10,10,WHITE);
+     qrFillRectColor(myGLCD,80,170,VGA_WHITE);
    }
    counter += 1; 
   
    for(int i = 60; i > 0; i-=10){
      if(TypeInfomationBits[counter] == 1){
-       Tft.fillRectangle(i,170,10,10,BLACK);
+       qrFillRectColor(myGLCD,i,170,VGA_BLACK);
      }else{
-       Tft.fillRectangle(i,170,10,10,WHITE);
+       qrFillRectColor(myGLCD,i,170,VGA_WHITE);
      }
      counter += 1;      
    }
@@ -75,20 +75,20 @@ void informationBits()
         if(mask == 0){
           if(BinaryMessage[counter] == 1){
             //Do oposite
-            Tft.fillRectangle(xPos,yPos,10,10,WHITE);
+            qrFillRectColor(myGLCD,xPos,yPos,VGA_WHITE);
           } 
           if(BinaryMessage[counter] == 0){
             //Do oposite
-            Tft.fillRectangle(xPos,yPos,10,10,BLACK);
+            qrFillRectColor(myGLCD,xPos,yPos,VGA_BLACK);
           }
         }else if(mask == 1){
           if(BinaryMessage[counter] == 1){
             //Do oposite
-            Tft.fillRectangle(xPos,yPos,10,10,BLACK);
+            qrFillRectColor(myGLCD,xPos,yPos,VGA_BLACK);
           } 
           if(BinaryMessage[counter] == 0){
             //Do oposite
-            Tft.fillRectangle(xPos,yPos,10,10,WHITE);
+            qrFillRectColor(myGLCD,xPos,yPos,VGA_WHITE);
           }     
         }
       counter += 1;  
@@ -106,20 +106,20 @@ void informationBits()
         if(mask == 0){
           if(BinaryMessage[counter] == 1){
             //Do oposite
-            Tft.fillRectangle(xPos,yPos,10,10,WHITE);
+            qrFillRectColor(myGLCD,xPos,yPos,VGA_WHITE);
           } 
           if(BinaryMessage[counter] == 0){
             //Do oposite
-            Tft.fillRectangle(xPos,yPos,10,10,BLACK);
+            qrFillRectColor(myGLCD,xPos,yPos,VGA_BLACK);
           }
         }else if(mask == 1){
           if(BinaryMessage[counter] == 1){
             //Do oposite
-            Tft.fillRectangle(xPos,yPos,10,10,BLACK);
+            qrFillRectColor(myGLCD,xPos,yPos,VGA_BLACK);
           } 
           if(BinaryMessage[counter] == 0){
             //Do oposite
-            Tft.fillRectangle(xPos,yPos,10,10,WHITE);
+            qrFillRectColor(myGLCD,xPos,yPos,VGA_WHITE);
           }     
         }
       counter += 1;  
@@ -136,20 +136,20 @@ void informationBits()
         if(mask == 0){
           if(BinaryMessage[counter] == 1){
             //Do oposite
-            Tft.fillRectangle(xPos,yPos,10,10,WHITE);
+            qrFillRectColor(myGLCD,xPos,yPos,VGA_WHITE);
           } 
           if(BinaryMessage[counter] == 0){
             //Do oposite
-            Tft.fillRectangle(xPos,yPos,10,10,BLACK);
+            qrFillRectColor(myGLCD,xPos,yPos,VGA_BLACK);
           }
         }else if(mask == 1){
           if(BinaryMessage[counter] == 1){
             //Do oposite
-            Tft.fillRectangle(xPos,yPos,10,10,BLACK);
+            qrFillRectColor(myGLCD,xPos,yPos,VGA_BLACK);
           } 
           if(BinaryMessage[counter] == 0){
             //Do oposite
-            Tft.fillRectangle(xPos,yPos,10,10,WHITE);
+            qrFillRectColor(myGLCD,xPos,yPos,VGA_WHITE);
           }     
         }
       counter += 1;        
@@ -166,20 +166,20 @@ void informationBits()
         if(mask == 0){
           if(BinaryMessage[counter] == 1){
             //Do oposite
-            Tft.fillRectangle(xPos,yPos,10,10,WHITE);
+            qrFillRectColor(myGLCD,xPos,yPos,VGA_WHITE);
           } 
           if(BinaryMessage[counter] == 0){
             //Do oposite
-            Tft.fillRectangle(xPos,yPos,10,10,BLACK);
+            qrFillRectColor(myGLCD,xPos,yPos,VGA_BLACK);
           }
         }else if(mask == 1){
           if(BinaryMessage[counter] == 1){
             //Do oposite
-            Tft.fillRectangle(xPos,yPos,10,10,BLACK);
+            qrFillRectColor(myGLCD,xPos,yPos,VGA_BLACK);
           } 
           if(BinaryMessage[counter] == 0){
             //Do oposite
-            Tft.fillRectangle(xPos,yPos,10,10,WHITE);
+            qrFillRectColor(myGLCD,xPos,yPos,VGA_WHITE);
           }     
         }
       counter += 1;          
@@ -195,20 +195,20 @@ void informationBits()
         if(mask == 0){
           if(BinaryMessage[counter] == 1){
             //Do oposite
-            Tft.fillRectangle(xPos,yPos,10,10,WHITE);
+            qrFillRectColor(myGLCD,xPos,yPos,VGA_WHITE);
           } 
           if(BinaryMessage[counter] == 0){
             //Do oposite
-            Tft.fillRectangle(xPos,yPos,10,10,BLACK);
+            qrFillRectColor(myGLCD,xPos,yPos,VGA_BLACK);
           }
         }else if(mask == 1){
           if(BinaryMessage[counter] == 1){
             //Do oposite
-            Tft.fillRectangle(xPos,yPos,10,10,BLACK);
+            qrFillRectColor(myGLCD,xPos,yPos,VGA_BLACK);
           } 
           if(BinaryMessage[counter] == 0){
             //Do oposite
-            Tft.fillRectangle(xPos,yPos,10,10,WHITE);
+            qrFillRectColor(myGLCD,xPos,yPos,VGA_WHITE);
           }     
         }
       counter += 1;          
@@ -227,20 +227,20 @@ void informationBits()
         if(mask == 0){
           if(BinaryECCWords[counter] == 1){
             //Do oposite
-            Tft.fillRectangle(xPos,yPos,10,10,WHITE);
+            qrFillRectColor(myGLCD,xPos,yPos,VGA_WHITE);
           } 
           if(BinaryECCWords[counter] == 0){
             //Do oposite
-            Tft.fillRectangle(xPos,yPos,10,10,BLACK);
+            qrFillRectColor(myGLCD,xPos,yPos,VGA_BLACK);
           }
         }else if(mask == 1){
           if(BinaryECCWords[counter] == 1){
             //Do oposite
-            Tft.fillRectangle(xPos,yPos,10,10,BLACK);
+            qrFillRectColor(myGLCD,xPos,yPos,VGA_BLACK);
           } 
           if(BinaryECCWords[counter] == 0){
             //Do oposite
-            Tft.fillRectangle(xPos,yPos,10,10,WHITE);
+            qrFillRectColor(myGLCD,xPos,yPos,VGA_WHITE);
           }     
         }
       counter += 1;          
@@ -258,20 +258,20 @@ void informationBits()
         if(mask == 0){
           if(BinaryECCWords[counter] == 1){
             //Do oposite
-            Tft.fillRectangle(xPos,yPos,10,10,WHITE);
+            qrFillRectColor(myGLCD,xPos,yPos,VGA_WHITE);
           } 
           if(BinaryECCWords[counter] == 0){
             //Do oposite
-            Tft.fillRectangle(xPos,yPos,10,10,BLACK);
+            qrFillRectColor(myGLCD,xPos,yPos,VGA_BLACK);
           }
         }else if(mask == 1){
           if(BinaryECCWords[counter] == 1){
             //Do oposite
-            Tft.fillRectangle(xPos,yPos,10,10,BLACK);
+            qrFillRectColor(myGLCD,xPos,yPos,VGA_BLACK);
           } 
           if(BinaryECCWords[counter] == 0){
             //Do oposite
-            Tft.fillRectangle(xPos,yPos,10,10,WHITE);
+            qrFillRectColor(myGLCD,xPos,yPos,VGA_WHITE);
           }     
         }
       counter += 1;     
@@ -287,20 +287,20 @@ void informationBits()
         if(mask == 0){
           if(BinaryECCWords[counter] == 1){
             //Do oposite
-            Tft.fillRectangle(xPos,yPos,10,10,WHITE);
+            qrFillRectColor(myGLCD,xPos,yPos,VGA_WHITE);
           } 
           if(BinaryECCWords[counter] == 0){
             //Do oposite
-            Tft.fillRectangle(xPos,yPos,10,10,BLACK);
+            qrFillRectColor(myGLCD,xPos,yPos,VGA_BLACK);
           }
         }else if(mask == 1){
           if(BinaryECCWords[counter] == 1){
             //Do oposite
-            Tft.fillRectangle(xPos,yPos,10,10,BLACK);
+            qrFillRectColor(myGLCD,xPos,yPos,VGA_BLACK);
           } 
           if(BinaryECCWords[counter] == 0){
             //Do oposite
-            Tft.fillRectangle(xPos,yPos,10,10,WHITE);
+            qrFillRectColor(myGLCD,xPos,yPos,VGA_WHITE);
           }     
         }
       counter += 1;     
@@ -316,20 +316,20 @@ void informationBits()
         if(mask == 0){
           if(BinaryECCWords[counter] == 1){
             //Do oposite
-            Tft.fillRectangle(xPos,yPos,10,10,WHITE);
+            qrFillRectColor(myGLCD,xPos,yPos,VGA_WHITE);
           } 
           if(BinaryECCWords[counter] == 0){
             //Do oposite
-            Tft.fillRectangle(xPos,yPos,10,10,BLACK);
+            qrFillRectColor(myGLCD,xPos,yPos,VGA_BLACK);
           }
         }else if(mask == 1){
           if(BinaryECCWords[counter] == 1){
             //Do oposite
-            Tft.fillRectangle(xPos,yPos,10,10,BLACK);
+            qrFillRectColor(myGLCD,xPos,yPos,VGA_BLACK);
           } 
           if(BinaryECCWords[counter] == 0){
             //Do oposite
-            Tft.fillRectangle(xPos,yPos,10,10,WHITE);
+            qrFillRectColor(myGLCD,xPos,yPos,VGA_WHITE);
           }     
         }
       counter += 1;     
@@ -345,20 +345,20 @@ void informationBits()
         if(mask == 0){
           if(BinaryECCWords[counter] == 1){
             //Do oposite
-            Tft.fillRectangle(xPos,yPos,10,10,WHITE);
+            qrFillRectColor(myGLCD,xPos,yPos,VGA_WHITE);
           } 
           if(BinaryECCWords[counter] == 0){
             //Do oposite
-            Tft.fillRectangle(xPos,yPos,10,10,BLACK);
+            qrFillRectColor(myGLCD,xPos,yPos,VGA_BLACK);
           }
         }else if(mask == 1){
           if(BinaryECCWords[counter] == 1){
             //Do oposite
-            Tft.fillRectangle(xPos,yPos,10,10,BLACK);
+            qrFillRectColor(myGLCD,xPos,yPos,VGA_BLACK);
           } 
           if(BinaryECCWords[counter] == 0){
             //Do oposite
-            Tft.fillRectangle(xPos,yPos,10,10,WHITE);
+            qrFillRectColor(myGLCD,xPos,yPos,VGA_WHITE);
           }     
         }
       counter += 1;     
@@ -374,20 +374,20 @@ void informationBits()
         if(mask == 0){
           if(BinaryECCWords[counter] == 1){
             //Do oposite
-            Tft.fillRectangle(xPos,yPos,10,10,WHITE);
+            qrFillRectColor(myGLCD,xPos,yPos,VGA_WHITE);
           } 
           if(BinaryECCWords[counter] == 0){
             //Do oposite
-            Tft.fillRectangle(xPos,yPos,10,10,BLACK);
+            qrFillRectColor(myGLCD,xPos,yPos,VGA_BLACK);
           }
         }else if(mask == 1){
           if(BinaryECCWords[counter] == 1){
             //Do oposite
-            Tft.fillRectangle(xPos,yPos,10,10,BLACK);
+            qrFillRectColor(myGLCD,xPos,yPos,VGA_BLACK);
           } 
           if(BinaryECCWords[counter] == 0){
             //Do oposite
-            Tft.fillRectangle(xPos,yPos,10,10,WHITE);
+            qrFillRectColor(myGLCD,xPos,yPos,VGA_WHITE);
           }     
         }
       counter += 1;     
@@ -404,20 +404,20 @@ void informationBits()
         if(mask == 0){
           if(BinaryECCWords[counter] == 1){
             //Do oposite
-            Tft.fillRectangle(xPos,yPos,10,10,WHITE);
+            qrFillRectColor(myGLCD,xPos,yPos,VGA_WHITE);
           } 
           if(BinaryECCWords[counter] == 0){
             //Do oposite
-            Tft.fillRectangle(xPos,yPos,10,10,BLACK);
+            qrFillRectColor(myGLCD,xPos,yPos,VGA_BLACK);
           }
         }else if(mask == 1){
           if(BinaryECCWords[counter] == 1){
             //Do oposite
-            Tft.fillRectangle(xPos,yPos,10,10,BLACK);
+            qrFillRectColor(myGLCD,xPos,yPos,VGA_BLACK);
           } 
           if(BinaryECCWords[counter] == 0){
             //Do oposite
-            Tft.fillRectangle(xPos,yPos,10,10,WHITE);
+            qrFillRectColor(myGLCD,xPos,yPos,VGA_WHITE);
           }     
         }
       counter += 1;     
@@ -432,20 +432,20 @@ void informationBits()
         if(mask == 0){
           if(BinaryECCWords[counter] == 1){
             //Do oposite
-            Tft.fillRectangle(xPos,yPos,10,10,WHITE);
+            qrFillRectColor(myGLCD,xPos,yPos,VGA_WHITE);
           } 
           if(BinaryECCWords[counter] == 0){
             //Do oposite
-            Tft.fillRectangle(xPos,yPos,10,10,BLACK);
+            qrFillRectColor(myGLCD,xPos,yPos,VGA_BLACK);
           }
         }else if(mask == 1){
           if(BinaryECCWords[counter] == 1){
             //Do oposite
-            Tft.fillRectangle(xPos,yPos,10,10,BLACK);
+            qrFillRectColor(myGLCD,xPos,yPos,VGA_BLACK);
           } 
           if(BinaryECCWords[counter] == 0){
             //Do oposite
-            Tft.fillRectangle(xPos,yPos,10,10,WHITE);
+            qrFillRectColor(myGLCD,xPos,yPos,VGA_WHITE);
           }     
         }
       counter += 1;     
@@ -601,7 +601,6 @@ void getXY(int x1, int y1)
  
    if(x1 == 10){
      y = 21; 
-   }   
-   
+   }     
 }
 
