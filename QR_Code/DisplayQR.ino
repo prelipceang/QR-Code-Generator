@@ -12,7 +12,6 @@ void informationBits(UTFT myGLCD)
 
    for(int i = 120; i > 40; i-=10){
      if(TypeInfomationBits[counter] == 1){
-       qrFillRectColor(myGLCD,i,170,VGA_BLACK);
        qrFillRectColor(myGLCD,90,i,VGA_BLACK);
      }else{
        qrFillRectColor(myGLCD,90,i,VGA_WHITE);

@@ -861,7 +861,6 @@ void setup()
 {
   myGLCD.InitLCD(PORTRAIT);
   myGLCD.clrScr();
-  myGLCD.setFont(SmallFont);
 
   myTouch.InitTouch();
   myTouch.setPrecision(PREC_HI);
